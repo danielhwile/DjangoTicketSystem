@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <title>Django Tix</title>
-</head>
-<body>
-  <h1>This is the Home Page! It's Working!!!!! That's Good Stuff!!!! {{name}}</h1>
-</body>
+{% extends "DjangTixReviewer/base.html" %}
+{% load static %}
+
+   {% block head%}
+      <meta charset="UTF-8">
+      <title>Django Tix</title>
+      <link rel="stylesheet" href="{% static 'djangtixreviewer/style.css' %}">
+   {% endblock %}
+
+{% block content %}
+<p>Welcome!</p>
+{% endblock %}
+<p> This is a test</p>
 </html>

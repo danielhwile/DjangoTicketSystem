@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-*pp(g-#=ckcdp5@p5uo_-v+bjb=nuc&e)fmy6frxu3*%5^dnuy
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'DjangTixReviewer.apps.DjangtixreviewerConfig'
+    'DjangTixReviewer'
 ]
 
 MIDDLEWARE = [
