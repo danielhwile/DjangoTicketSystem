@@ -1,0 +1,30 @@
+{% extends './base.html' %}
+{% block content %}
+<h2>Ticket List</h2>
+<table id="Tickets">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Owner</th>
+    <th>Description</th>
+    <th>CreateDate</th>
+    <th>DueDate</th>
+    <th>Status</th>
+    <th>RelevantUsers</th>
+  </tr>
+	<tr>
+  {% for ticket in object_list %}
+  </tr>
+  <tr>
+      <td>{{ ticket.id }}</td>
+      <td>{{ ticket.Name }}</td>
+      <td>{{ ticket.Owner }}</td>
+      <td>{{ ticket.Description }}</td>
+      <td>{{ ticket.CreateDate }}</td>
+      <td>{{ ticket.DueDate }}</td>
+      <td>{{ ticket.IsClosed }}</td>
+      <td>{{ ticket.RelevantUsers }}</td>
+  </tr>
+    {% endfor %}
+</table>
+{% endblock %}
